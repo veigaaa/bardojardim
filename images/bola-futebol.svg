@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <!-- Gradiente 3D: luz de cima-esquerda, estilo clássico Wikimedia -->
+    <radialGradient id="sg" cx="39%" cy="36%" r="65%">
+      <stop offset="0%"   stop-color="#ffffff"/>
+      <stop offset="35%"  stop-color="#f0f0f0"/>
+      <stop offset="70%"  stop-color="#c8c8c8"/>
+      <stop offset="100%" stop-color="#888888"/>
+    </radialGradient>
+    <!-- Gradiente para manchas pretas: ligeiramente mais claras no centro -->
+    <radialGradient id="pg" cx="40%" cy="35%" r="65%">
+      <stop offset="0%"   stop-color="#333333"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </radialGradient>
+    <clipPath id="bc"><circle cx="100" cy="100" r="97"/></clipPath>
+  </defs>
+
+  <!-- Sombra projetada -->
+  <ellipse cx="106" cy="198" rx="72" ry="8" fill="rgba(0,0,0,0.22)"/>
+
+  <!-- Esfera base -->
+  <circle cx="100" cy="100" r="97" fill="url(#sg)" stroke="#888" stroke-width="1.5"/>
+
+  <!-- Manchas pretas (12 pentágonos num truncated icosahedron projetado) -->
+  <g clip-path="url(#bc)" fill="url(#pg)" stroke="#555" stroke-width="1" stroke-linejoin="round">
+    <!-- Pentágono do topo -->
+    <polygon points="100,14  119.5,27.5  112.5,50  87.5,50  80.5,27.5"/>
+    <!-- Anel superior — 5 pentágonos -->
+    <polygon points="155,44  170,66  156,86  133,80  130,57"/>
+    <polygon points="185,114 182,138 161,148 145,130 155,108"/>
+    <polygon points="152,172 132,190 109,184 106,162 127,150"/>
+    <polygon points="73,184  50,188  37,167  52,150  74,158"/>
+    <polygon points="15,114  26,91   47,85   60,104  45,126"/>
+    <!-- Anel inferior — 5 pentágonos -->
+    <polygon points="48,54   69,42   89,54   84,77   60,80"/>
+    <polygon points="154,74  158,97  142,113 121,106 120,82"/>
+    <polygon points="162,140 156,162 134,168 121,152 133,130"/>
+    <polygon points="78,162  62,178  42,168  44,146  68,140"/>
+    <polygon points="38,96   42,73   62,68   72,87   56,104"/>
+    <!-- Pentágono do fundo -->
+    <polygon points="100,186  81,172  87,150  113,150  119,172"/>
+  </g>
+
+  <!-- Reflexo suave -->
+  <ellipse cx="74" cy="64" rx="26" ry="16" fill="white" opacity="0.32" transform="rotate(-30 74 64)"/>
+</svg>
