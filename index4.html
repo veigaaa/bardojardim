@@ -253,15 +253,57 @@
 
         <!-- Coluna esquerda: bola + bandeira (imagens reais) -->
         <div class="eventos-visual reveal">
-          <!-- Bola de futebol — imagem real (domínio público, Wikimedia Commons) -->
+          <!-- Bola de futebol — SVG inline, padrão Telstar com gradiente 3D -->
           <div class="ball-wrap">
-            <img
-              src="images/bola-futebol.svg"
-              alt="Bola de futebol"
-              class="ball-img"
-              width="260"
-              height="260"
-            />
+            <svg class="ball-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-label="Bola de futebol">
+              <defs>
+                <radialGradient id="ball-bg" cx="36%" cy="30%" r="72%">
+                  <stop offset="0%"   stop-color="#ffffff"/>
+                  <stop offset="18%"  stop-color="#f5f5f5"/>
+                  <stop offset="45%"  stop-color="#d8d8d8"/>
+                  <stop offset="72%"  stop-color="#ababab"/>
+                  <stop offset="100%" stop-color="#787878"/>
+                </radialGradient>
+                <radialGradient id="ball-pg" cx="36%" cy="30%" r="80%">
+                  <stop offset="0%"   stop-color="#303030"/>
+                  <stop offset="50%"  stop-color="#1c1c1c"/>
+                  <stop offset="100%" stop-color="#060606"/>
+                </radialGradient>
+                <radialGradient id="ball-vig" cx="50%" cy="50%" r="50%">
+                  <stop offset="65%"  stop-color="rgba(0,0,0,0)"/>
+                  <stop offset="100%" stop-color="rgba(0,0,0,0.28)"/>
+                </radialGradient>
+                <clipPath id="ball-clip"><circle cx="110" cy="110" r="104"/></clipPath>
+              </defs>
+              <!-- Sombra projetada -->
+              <ellipse cx="114" cy="214" rx="80" ry="7" fill="rgba(0,0,0,0.22)"/>
+              <!-- Esfera base -->
+              <circle cx="110" cy="110" r="104" fill="url(#ball-bg)" stroke="#aaa" stroke-width="0.8"/>
+              <!-- 12 pentágonos negros — padrão Telstar, distorção perspética -->
+              <g clip-path="url(#ball-clip)" fill="url(#ball-pg)" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linejoin="round">
+                <!-- Pentágono do topo (facing viewer) -->
+                <polygon points="110,15 131,30 124,55 96,55 89,30"/>
+                <!-- Anel superior — 5 pentágonos -->
+                <polygon points="170,48 187,73 172,95 146,88 143,63"/>
+                <polygon points="203,125 200,152 177,163 160,143 170,119"/>
+                <polygon points="167,189 145,209 120,203 117,178 140,165"/>
+                <polygon points="80,202 55,207 41,184 57,165 81,174"/>
+                <polygon points="17,125 29,100 52,94 66,114 50,139"/>
+                <!-- Anel inferior — 5 pentágonos -->
+                <polygon points="53,59 76,46 98,59 92,85 66,88"/>
+                <polygon points="169,81 174,107 156,124 133,117 132,90"/>
+                <polygon points="178,154 172,178 147,185 133,167 146,143"/>
+                <polygon points="86,178 68,196 46,185 48,161 75,154"/>
+                <polygon points="42,106 46,80 68,75 79,96 62,114"/>
+                <!-- Pentágono do fundo -->
+                <polygon points="110,205 89,189 96,165 124,165 131,189"/>
+              </g>
+              <!-- Vignette para profundidade nas bordas -->
+              <circle cx="110" cy="110" r="104" fill="url(#ball-vig)" clip-path="url(#ball-clip)"/>
+              <!-- Reflexos especulares (luz de cima-esquerda) -->
+              <ellipse cx="80" cy="68" rx="27" ry="17" fill="white" opacity="0.33" transform="rotate(-30 80 68)" clip-path="url(#ball-clip)"/>
+              <ellipse cx="71" cy="61" rx="10" ry="6"  fill="white" opacity="0.50" transform="rotate(-30 71 61)" clip-path="url(#ball-clip)"/>
+            </svg>
             <div class="ball-glow" aria-hidden="true"></div>
           </div>
 

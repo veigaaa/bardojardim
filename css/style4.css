@@ -465,16 +465,15 @@ button { cursor: pointer; font-family: inherit; }
   gap: 2rem;
 }
 
-/* Bola: imagem com animação de rotação e glow */
+/* Bola: SVG inline com animação de rotação e glow */
 .ball-wrap {
   position: relative;
-  width: clamp(200px, 28vw, 300px);
+  width: clamp(220px, 28vw, 300px);
   aspect-ratio: 1;
 }
 .ball-img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
   animation: spin 18s linear infinite;
   filter: drop-shadow(-6px 6px 18px rgba(0,180,216,.3))
           drop-shadow(6px -6px 14px rgba(113,237,160,.12));
