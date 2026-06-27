@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bar do Jardim — Reaberto em maio de 2026 no coração de Campo de Besteiros, Tondela. Esplanada, snack bar, transmissão de jogos e muito convívio." />
+  <title>Bar do Jardim — Campo de Besteiros</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="nav-logo-icon">🌿</span>
+      <span>Bar do Jardim</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#mundial">Mundial</a></li>
+      <li><a href="#marcas">Marcas</a></li>
+      <li><a href="#horario">Horário</a></li>
+      <li><a href="#localizacao">Localização</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content fade-in">
+      <p class="hero-sup">Campo de Besteiros · Tondela</p>
+      <h1 class="hero-title">Bar do Jardim</h1>
+      <p class="hero-tagline">Reaberto em maio de 2026 — o seu espaço para bons momentos<br>no coração de Campo de Besteiros</p>
+      <a href="#sobre" class="btn btn-hero scroll-link">Descobrir</a>
+    </div>
+    <a href="#sobre" class="hero-scroll scroll-link" aria-label="Rolar para baixo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ===== SOBRE NÓS ===== -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <h2 class="section-title reveal">Sobre Nós</h2>
+      <p class="section-intro reveal">
+        Reaberto em maio de 2026, o Bar do Jardim é um espaço familiar no coração de Campo de Besteiros.
+        Um lugar de convívio, bom ambiente e boa disposição — para todas as idades e para todos os momentos.
+      </p>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <!-- Ícone esplanada -->
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 20 L24 6 L44 20" fill="currentColor" opacity=".2" stroke="currentColor"/>
+              <path d="M4 20 L44 20" />
+              <line x1="24" y1="20" x2="24" y2="42"/>
+              <line x1="10" y1="42" x2="38" y2="42"/>
+              <rect x="10" y="28" width="28" height="14" rx="1" fill="currentColor" opacity=".1" stroke="currentColor"/>
+            </svg>
+          </div>
+          <h3>Esplanada ao Ar Livre</h3>
+          <p>Desfrute do ambiente exterior com sol e boa companhia</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <!-- Ícone parque infantil -->
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="12" r="5"/>
+              <path d="M8 42 L16 22 L24 30 L32 22 L40 42"/>
+              <line x1="8" y1="42" x2="40" y2="42"/>
+              <path d="M20 36 L28 36" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <h3>Parque Infantil</h3>
+          <p>Espaço seguro para os mais pequenos brincarem</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <!-- Ícone Wi-Fi -->
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M6 18 Q24 6 42 18"/>
+              <path d="M12 26 Q24 16 36 26"/>
+              <path d="M18 34 Q24 28 30 34"/>
+              <circle cx="24" cy="40" r="2.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Wi-Fi Grátis</h3>
+          <p>Internet rápida para todos os clientes</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <!-- Ícone música -->
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 36 L18 14 L38 10 L38 32"/>
+              <circle cx="14" cy="36" r="4" fill="currentColor" opacity=".3"/>
+              <circle cx="34" cy="32" r="4" fill="currentColor" opacity=".3"/>
+              <line x1="18" y1="14" x2="38" y2="10"/>
+            </svg>
+          </div>
+          <h3>Música ao Vivo</h3>
+          <p>Noites animadas com boa música para toda a gente</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <!-- Ícone cão -->
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 30 Q8 20 16 18 Q18 10 26 10 L32 10 L36 6 L38 14 Q44 18 44 28 Q44 38 34 40 Q30 44 24 42 Q14 40 8 30Z" fill="currentColor" opacity=".15"/>
+              <circle cx="20" cy="24" r="2" fill="currentColor"/>
+              <circle cx="30" cy="22" r="2" fill="currentColor"/>
+              <path d="M18 32 Q24 36 30 32"/>
+              <path d="M36 6 L38 14"/>
+            </svg>
+          </div>
+          <h3>Cães Permitidos</h3>
+          <p>Os seus amigos de quatro patas são bem-vindos</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <!-- Ícone ar condicionado -->
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="12" width="40" height="16" rx="4" fill="currentColor" opacity=".15"/>
+              <line x1="4" y1="20" x2="44" y2="20"/>
+              <line x1="12" y1="28" x2="10" y2="36"/>
+              <line x1="20" y1="28" x2="18" y2="36"/>
+              <line x1="28" y1="28" x2="26" y2="36"/>
+              <line x1="36" y1="28" x2="34" y2="36"/>
+            </svg>
+          </div>
+          <h3>Ar Condicionado</h3>
+          <p>Conforto em qualquer estação do ano</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="section section-alt" id="menu">
+    <div class="container">
+      <h2 class="section-title reveal">Menu</h2>
+      <p class="section-intro reveal">Uma oferta variada para todos os gostos e momentos do dia</p>
+
+      <div class="tabs reveal">
+        <button class="tab-btn active" data-tab="cafetaria">☕ Cafetaria</button>
+        <button class="tab-btn" data-tab="pastelaria">🥐 Pastelaria</button>
+        <button class="tab-btn" data-tab="snackbar">🍔 Snack Bar</button>
+        <button class="tab-btn" data-tab="bebidas">🥤 Bebidas</button>
+        <button class="tab-btn" data-tab="noite">🌙 Noite</button>
+      </div>
+
+      <!-- Cafetaria & Pequeno-Almoço -->
+      <div class="tab-content active" id="tab-cafetaria">
+        <div class="menu-grid">
+          <div class="menu-card"><span class="menu-icon">☕</span><h4>Café</h4><p>Expresso, duplo ou abatanado</p></div>
+          <div class="menu-card"><span class="menu-icon">🥛</span><h4>Galão</h4><p>Cremoso e reconfortante</p></div>
+          <div class="menu-card"><span class="menu-icon">☕</span><h4>Carioca</h4><p>Suave e aromático</p></div>
+          <div class="menu-card"><span class="menu-icon">🫖</span><h4>Chá</h4><p>Variedade de infusões</p></div>
+          <div class="menu-card"><span class="menu-icon">🥛</span><h4>Leite</h4><p>Quente, frio ou com chocolate</p></div>
+          <div class="menu-card"><span class="menu-icon">🥐</span><h4>Croissants</h4><p>Frescos todas as manhãs</p></div>
+          <div class="menu-card"><span class="menu-icon">🍞</span><h4>Tostas</h4><p>Mistas e variadas</p></div>
+          <div class="menu-card"><span class="menu-icon">🍰</span><h4>Bolos</h4><p>Feitos com carinho</p></div>
+          <div class="menu-card"><span class="menu-icon">🥧</span><h4>Pastéis</h4><p>De nata e outros clássicos</p></div>
+        </div>
+      </div>
+
+      <!-- Pastelaria -->
+      <div class="tab-content" id="tab-pastelaria">
+        <div class="menu-grid">
+          <div class="menu-card"><span class="menu-icon">🎂</span><h4>Bolos do Dia</h4><p>Variedade diária de bolos caseiros</p></div>
+          <div class="menu-card"><span class="menu-icon">🥧</span><h4>Tartes</h4><p>Seleção de tartes frescas</p></div>
+          <div class="menu-card"><span class="menu-icon">🥪</span><h4>Salgados</h4><p>Rissóis, croquetes e empadas</p></div>
+          <div class="menu-card"><span class="menu-icon">🌭</span><h4>Pão com Chouriço</h4><p>Quentinho e irresistível</p></div>
+          <div class="menu-card"><span class="menu-icon">🍩</span><h4>Especialidades</h4><p>Surpresas da pastelaria todos os dias</p></div>
+        </div>
+      </div>
+
+      <!-- Snack Bar -->
+      <div class="tab-content" id="tab-snackbar">
+        <div class="menu-grid">
+          <div class="menu-card"><span class="menu-icon">🥩</span><h4>Bifanas</h4><p>Suculentas e temperadas</p></div>
+          <div class="menu-card"><span class="menu-icon">🍔</span><h4>Hambúrgueres</h4><p>Grelhados na hora</p></div>
+          <div class="menu-card"><span class="menu-icon">🌭</span><h4>Cachorros</h4><p>Clássicos e especiais</p></div>
+          <div class="menu-card"><span class="menu-icon">🥩</span><h4>Pregos</h4><p>No prato ou no pão</p></div>
+          <div class="menu-card"><span class="menu-icon">🍗</span><h4>Panados</h4><p>Frango ou porco crocantes</p></div>
+          <div class="menu-card"><span class="menu-icon">🍞</span><h4>Tostas Quentes</h4><p>Mistas e variadas</p></div>
+          <div class="menu-card"><span class="menu-icon">🍕</span><h4>Pizzas</h4><p>Variedade de sabores</p></div>
+        </div>
+      </div>
+
+      <!-- Bebidas -->
+      <div class="tab-content" id="tab-bebidas">
+        <div class="menu-grid">
+          <div class="menu-card"><span class="menu-icon">🥤</span><h4>Refrigerantes</h4><p>Coca-Cola, Fanta, Sprite e mais</p></div>
+          <div class="menu-card"><span class="menu-icon">🍊</span><h4>Sumos Naturais</h4><p>Espremidos na hora</p></div>
+          <div class="menu-card"><span class="menu-icon">🍺</span><h4>Cervejas</h4><p>Pressão e garrafa</p></div>
+          <div class="menu-card"><span class="menu-icon">🍷</span><h4>Vinhos</h4><p>Tintos, brancos e rosés</p></div>
+          <div class="menu-card"><span class="menu-icon">🍹</span><h4>Sangria</h4><p>Caseira e refrescante</p></div>
+          <div class="menu-card"><span class="menu-icon">🥃</span><h4>Licores</h4><p>Seleção variada</p></div>
+          <div class="menu-card"><span class="menu-icon">🥤</span><h4>Smoothies Zumit</h4><p>Batidos naturais e milkshakes</p></div>
+        </div>
+      </div>
+
+      <!-- Noite -->
+      <div class="tab-content" id="tab-noite">
+        <div class="menu-grid">
+          <div class="menu-card"><span class="menu-icon">🥃</span><h4>Whiskys</h4><p>Seleção de single malts e blends</p></div>
+          <div class="menu-card"><span class="menu-icon">🍸</span><h4>Gin Tónico</h4><p>Gins premium com tónica especial</p></div>
+          <div class="menu-card"><span class="menu-icon">🥂</span><h4>Shots</h4><p>Variedade para animar a noite</p></div>
+          <div class="menu-card"><span class="menu-icon">🍹</span><h4>Cocktails</h4><p>Clássicos e criações da casa</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIA ===== -->
+  <section class="section" id="galeria">
+    <div class="container">
+      <h2 class="section-title reveal">Galeria</h2>
+      <p class="section-intro reveal">Conheça o nosso espaço</p>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" data-src="images/exterior.jpg" data-caption="Exterior — Bar do Jardim">
+          <img src="images/exterior.jpg" alt="Exterior do Bar do Jardim" loading="lazy"/>
+          <div class="gallery-overlay"><span>Ver foto</span></div>
+        </div>
+        <div class="gallery-item reveal" data-src="images/exterior2.jpg" data-caption="Exterior — Fachada">
+          <img src="images/exterior2.jpg" alt="Fachada do Bar do Jardim" loading="lazy"/>
+          <div class="gallery-overlay"><span>Ver foto</span></div>
+        </div>
+        <div class="gallery-item reveal" data-src="images/exterior3.jpg" data-caption="Exterior — Esplanada">
+          <img src="images/exterior3.jpg" alt="Esplanada do Bar do Jardim" loading="lazy"/>
+          <div class="gallery-overlay"><span>Ver foto</span></div>
+        </div>
+        <div class="gallery-item reveal" data-src="images/exterior4.jpg" data-caption="Exterior — Vista geral">
+          <img src="images/exterior4.jpg" alt="Vista geral do Bar do Jardim" loading="lazy"/>
+          <div class="gallery-overlay"><span>Ver foto</span></div>
+        </div>
+        <div class="gallery-item reveal" data-src="images/interior.jpg" data-caption="Interior — Salão principal">
+          <img src="images/interior.jpg" alt="Interior do Bar do Jardim" loading="lazy"/>
+          <div class="gallery-overlay"><span>Ver foto</span></div>
+        </div>
+        <div class="gallery-item reveal" data-src="images/interior2.jpg" data-caption="Interior — Ambiente acolhedor">
+          <img src="images/interior2.jpg" alt="Interior acolhedor do Bar do Jardim" loading="lazy"/>
+          <div class="gallery-overlay"><span>Ver foto</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galeria de fotos">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">&times;</button>
+      <button class="lightbox-prev" id="lightboxPrev" aria-label="Foto anterior">&#8249;</button>
+      <button class="lightbox-next" id="lightboxNext" aria-label="Próxima foto">&#8250;</button>
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightboxImg"/>
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MUNDIAL 2026 ===== -->
+  <section class="section section-alt" id="mundial">
+    <div class="container">
+      <div class="mundial-inner">
+        <div class="mundial-text reveal">
+          <span class="mundial-badge">Mundial 2026</span>
+          <h2 class="section-title" style="text-align:left; margin-bottom: 1rem;">Vê o Mundial<br>Connosco</h2>
+          <p class="mundial-desc">Não percas um único jogo — vem viver a emoção connosco. Ecrã grande, boa companhia, bebida fresca e o melhor ambiente para apoiar Portugal!</p>
+          <ul class="mundial-list">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              Transmissão em ecrã grande
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              Ambiente único e animado
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              Snacks e bebidas durante os jogos
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              Esplanada aberta para as noites de verão
+            </li>
+          </ul>
+        </div>
+        <div class="mundial-visual reveal">
+          <!-- Bola de futebol em CSS/SVG puro -->
+          <div class="football-wrapper">
+            <svg class="football" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <clipPath id="ballClip">
+                  <circle cx="100" cy="100" r="95"/>
+                </clipPath>
+                <radialGradient id="ballGrad" cx="38%" cy="35%" r="65%">
+                  <stop offset="0%" stop-color="#ffffff"/>
+                  <stop offset="60%" stop-color="#e8e8e8"/>
+                  <stop offset="100%" stop-color="#aaaaaa"/>
+                </radialGradient>
+              </defs>
+              <!-- Corpo da bola -->
+              <circle cx="100" cy="100" r="95" fill="url(#ballGrad)" stroke="#888" stroke-width="2"/>
+              <!-- Padrão hexagonal/pentagonal estilizado -->
+              <g clip-path="url(#ballClip)" fill="#222" stroke="#333" stroke-width="1.5" opacity="0.85">
+                <!-- Pentágono central -->
+                <polygon points="100,58 124,75 115,103 85,103 76,75"/>
+                <!-- Pentágonos laterais -->
+                <polygon points="100,5 120,20 124,45 100,58 76,45 80,20"/>
+                <polygon points="165,55 172,80 152,95 124,75 124,45 148,38"/>
+                <polygon points="183,120 165,140 140,135 133,108 152,95 172,80"/>
+                <polygon points="140,185 114,192 100,170 115,148 140,150 158,165"/>
+                <polygon points="60,185 42,165 60,150 85,148 100,170 86,192"/>
+                <polygon points="17,120 28,80 48,95 67,108 60,135 35,140"/>
+                <polygon points="35,55 52,38 76,45 76,75 48,95 28,80"/>
+              </g>
+              <!-- Brilho -->
+              <ellipse cx="75" cy="65" rx="22" ry="14" fill="white" opacity="0.25" transform="rotate(-30 75 65)"/>
+            </svg>
+            <div class="football-glow"></div>
+          </div>
+          <p class="mundial-slogan">Força Portugal! 🇵🇹</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARCAS ===== -->
+  <section class="section" id="marcas">
+    <div class="container">
+      <h2 class="section-title reveal">As Nossas Marcas</h2>
+      <p class="section-intro reveal">Trabalhamos com as melhores marcas para garantir a sua satisfação</p>
+      <div class="brands-grid reveal">
+        <span class="brand-badge brand-delta">Delta</span>
+        <span class="brand-badge brand-superbock">Super Bock</span>
+        <span class="brand-badge brand-sagres">Sagres</span>
+        <span class="brand-badge brand-carlsberg">Carlsberg</span>
+        <span class="brand-badge brand-coral">Coral</span>
+        <span class="brand-badge brand-ola">Olá</span>
+        <span class="brand-badge brand-nestle">Nestlé</span>
+        <span class="brand-badge brand-zumit">Zumit</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HORÁRIO ===== -->
+  <section class="section section-alt" id="horario">
+    <div class="container">
+      <h2 class="section-title reveal">Horário</h2>
+      <p class="section-intro reveal">Abertos todos os dias para o servir</p>
+      <div class="schedule-grid">
+        <div class="schedule-card reveal">
+          <div class="schedule-days">Segunda a Quinta</div>
+          <div class="schedule-time">08:00 <span class="schedule-sep">—</span> 00:00</div>
+          <div class="schedule-label">4 dias por semana</div>
+        </div>
+        <div class="schedule-card schedule-card-featured reveal">
+          <div class="schedule-badge">Horário Alargado</div>
+          <div class="schedule-days">Sexta a Domingo</div>
+          <div class="schedule-time">08:00 <span class="schedule-sep">—</span> 02:00</div>
+          <div class="schedule-label">Fins de semana até às 2h</div>
+        </div>
+      </div>
+      <p class="schedule-note reveal">
+        <svg viewBox="0 0 20 20" fill="currentColor" style="width:1.1em;height:1.1em;vertical-align:-0.15em;margin-right:.3em"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>
+        Horários sujeitos a alteração em dias festivos ou eventos especiais.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== LOCALIZAÇÃO ===== -->
+  <section class="section" id="localizacao">
+    <div class="container">
+      <h2 class="section-title reveal">Localização</h2>
+      <div class="location-inner">
+        <div class="location-info reveal">
+          <div class="location-addr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <div>
+              <strong>Rua Doutor Alves Silva nº 1545</strong><br/>
+              Campo de Besteiros<br/>
+              3465-023 Tondela
+            </div>
+          </div>
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=Rua+Doutor+Alves+Silva+1545+Campo+de+Besteiros+Tondela+3465-023"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline"
+          >Como Chegar</a>
+        </div>
+        <div class="location-map reveal">
+          <iframe
+            title="Localização Bar do Jardim"
+            src="https://maps.google.com/maps?q=Rua+Doutor+Alves+Silva+1545+Campo+de+Besteiros+Tondela+3465-023+Portugal&output=embed&hl=pt"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="nav-logo-icon">🌿</span>
+        <span>Bar do Jardim</span>
+      </div>
+      <p class="footer-addr">Rua Doutor Alves Silva nº 1545 · Campo de Besteiros · Tondela</p>
+      <div class="footer-social">
+        <!-- SUBSTITUIR pelo link do Facebook quando disponível -->
+        <a href="#" class="footer-fb" aria-label="Facebook do Bar do Jardim">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+          Facebook
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Bar do Jardim — Campo de Besteiros. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
