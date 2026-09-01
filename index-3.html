@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Bar do Jardim — Bom ambiente, boa companhia, sempre. Campo de Besteiros, Tondela. Reaberto em maio de 2026." />
   <title>Bar do Jardim — Campo de Besteiros</title>
-  <link rel="stylesheet" href="css/style4.css" />
+  <link rel="stylesheet" href="css/style3.css" />
 </head>
 <body>
 
@@ -42,7 +42,7 @@
       <p class="hero-location">Campo de Besteiros · Tondela · Reaberto em maio de 2026</p>
       <h1 class="hero-title">Bar do Jardim</h1>
       <p class="hero-slogan">Bom ambiente, boa companhia, sempre</p>
-      <a href="#sobre" class="hero-scroll-btn" aria-label="Explorar o site">
+      <a href="#sobre" class="hero-scroll-btn js-scroll" aria-label="Explorar o site">
         <span class="hero-scroll-circle">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
             <polyline points="6 9 12 15 18 9"/>
@@ -142,14 +142,9 @@
         </div>
       </div>
     </div>
-    <a href="#menu" class="section-arrow" aria-label="Ir para Menu">
-      <span class="section-arrow-circle">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-      </span>
-    </a>
   </section>
 
-  <!-- ===== FOTO DIVIDER 1 — exterior, entre Sobre e Menu ===== -->
+  <!-- ===== FOTO DIVIDER 1 — exterior animado, entre Sobre e Menu ===== -->
   <div class="foto-divider" aria-hidden="true">
     <div class="foto-divider-img fdiv-exterior" data-parallax-speed="0.35"></div>
     <div class="foto-divider-overlay">
@@ -171,6 +166,7 @@
         <button class="tab-btn" data-tab="noite">🌙 Noite</button>
       </div>
 
+      <!-- Cafetaria — lista simples, não clicável -->
       <div class="tab-content active" id="tab-cafetaria">
         <ul class="menu-lista">
           <li class="menu-item"><span class="mi-emoji">☕</span><span class="mi-nome">Café</span><span class="mi-desc">Expresso, duplo ou abatanado</span></li>
@@ -184,6 +180,7 @@
           <li class="menu-item"><span class="mi-emoji">🥧</span><span class="mi-nome">Pastéis</span><span class="mi-desc">De nata e outros clássicos</span></li>
         </ul>
       </div>
+
       <div class="tab-content" id="tab-pastelaria">
         <ul class="menu-lista">
           <li class="menu-item"><span class="mi-emoji">🎂</span><span class="mi-nome">Bolos do Dia</span><span class="mi-desc">Variedade diária de bolos caseiros</span></li>
@@ -193,6 +190,7 @@
           <li class="menu-item"><span class="mi-emoji">🍩</span><span class="mi-nome">Especialidades</span><span class="mi-desc">Surpresas da pastelaria todos os dias</span></li>
         </ul>
       </div>
+
       <div class="tab-content" id="tab-snackbar">
         <ul class="menu-lista">
           <li class="menu-item"><span class="mi-emoji">🥩</span><span class="mi-nome">Bifanas</span><span class="mi-desc">Suculentas e temperadas</span></li>
@@ -204,6 +202,7 @@
           <li class="menu-item"><span class="mi-emoji">🍕</span><span class="mi-nome">Pizzas</span><span class="mi-desc">Variedade de sabores</span></li>
         </ul>
       </div>
+
       <div class="tab-content" id="tab-bebidas">
         <ul class="menu-lista">
           <li class="menu-item"><span class="mi-emoji">🥤</span><span class="mi-nome">Refrigerantes</span><span class="mi-desc">Coca-Cola, Fanta, Sprite e mais</span></li>
@@ -215,6 +214,7 @@
           <li class="menu-item"><span class="mi-emoji">🥤</span><span class="mi-nome">Smoothies Zumit</span><span class="mi-desc">Batidos naturais e milkshakes</span></li>
         </ul>
       </div>
+
       <div class="tab-content" id="tab-noite">
         <ul class="menu-lista">
           <li class="menu-item"><span class="mi-emoji">🥃</span><span class="mi-nome">Whiskys</span><span class="mi-desc">Seleção de single malts e blends</span></li>
@@ -224,14 +224,9 @@
         </ul>
       </div>
     </div>
-    <a href="#eventos" class="section-arrow" aria-label="Ir para Eventos">
-      <span class="section-arrow-circle">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-      </span>
-    </a>
   </section>
 
-  <!-- ===== FOTO DIVIDER 2 — duo lado a lado, entre Menu e Eventos ===== -->
+  <!-- ===== FOTO DIVIDER 2 — duo exterior + interior, entre Menu e Eventos ===== -->
   <div class="foto-duo" aria-hidden="true">
     <div class="foto-duo-item">
       <div class="foto-duo-img fdiv-exterior3" data-parallax-speed="0.3"></div>
@@ -251,29 +246,125 @@
 
       <div class="eventos-grid">
 
-        <!-- Coluna esquerda: bola + bandeira (imagens reais) -->
+        <!-- Coluna esquerda: bola + bandeira -->
         <div class="eventos-visual reveal">
-          <!-- Bola de futebol -->
+          <!-- Bola de futebol redesenhada com padrão hexagonal/pentagonal real -->
           <div class="ball-wrap">
-            <img
-              src="images/bola-futebol.png"
-              alt="Bola de futebol"
-              class="ball-img"
-              width="220"
-              height="220"
-            />
+            <svg class="football" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <clipPath id="bola3">
+                  <circle cx="110" cy="110" r="104"/>
+                </clipPath>
+                <!-- Gradiente 3D: luz vindo de cima-esquerda -->
+                <radialGradient id="esfera3" cx="33%" cy="28%" r="72%">
+                  <stop offset="0%"   stop-color="#f8fdff"/>
+                  <stop offset="18%"  stop-color="#dff0f8"/>
+                  <stop offset="45%"  stop-color="#b8d8ee"/>
+                  <stop offset="72%"  stop-color="#7aaac8"/>
+                  <stop offset="100%" stop-color="#3d6080"/>
+                </radialGradient>
+                <!-- Gradiente para manchas pretas com forma esférica -->
+                <radialGradient id="mancha3" cx="38%" cy="32%" r="72%">
+                  <stop offset="0%"   stop-color="#1c1c2e"/>
+                  <stop offset="100%" stop-color="#0a0a14"/>
+                </radialGradient>
+                <!-- Sombra externa -->
+                <filter id="sombraExterna">
+                  <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="rgba(0,0,0,0.6)"/>
+                </filter>
+              </defs>
+
+              <!-- Sombra sob a bola -->
+              <ellipse cx="118" cy="218" rx="70" ry="10" fill="rgba(0,0,0,0.25)"/>
+
+              <!-- Base esférica com gradiente 3D -->
+              <circle cx="110" cy="110" r="104" fill="url(#esfera3)" filter="url(#sombraExterna)"/>
+
+              <!-- Manchas hexagonais/pentagonais recortadas dentro da bola -->
+              <g clip-path="url(#bola3)" fill="url(#mancha3)" stroke="rgba(10,10,25,0.6)" stroke-width="1.2">
+
+                <!-- Pentágono do topo -->
+                <polygon points="110,14 129,27 122,51 98,51 91,27"/>
+
+                <!-- Anel superior (5 pentágonos) — centros a ~65px do centro -->
+                <!-- 1 — canto superior-direito -->
+                <polygon points="158,42 174,60 163,82 140,78 136,55"/>
+                <!-- 2 — direito -->
+                <polygon points="188,106 196,130 175,142 157,126 163,102"/>
+                <!-- 3 — inferior-direito -->
+                <polygon points="162,172 150,192 126,190 118,167 138,155"/>
+                <!-- 4 — inferior-esquerdo -->
+                <polygon points="82,190 58,188 50,165 66,150 90,162"/>
+                <!-- 5 — esquerdo -->
+                <polygon points="32,142 24,118 44,102 63,112 57,138"/>
+                <!-- 6 — canto superior-esquerdo -->
+                <polygon points="62,55 84,42 107,54 103,78 78,83"/>
+
+                <!-- Pentágono do fundo -->
+                <polygon points="110,206 91,193 98,169 122,169 129,193"/>
+
+                <!-- Pentágonos do anel inferior (5) -->
+                <!-- 1 -->
+                <polygon points="140,156 160,148 172,166 160,182 138,178"/>
+                <!-- 2 -->
+                <polygon points="80,156 62,178 48,165 58,148 80,146"/>
+              </g>
+
+              <!-- Costura (linhas que separam os painéis) - subtis -->
+              <g clip-path="url(#bola3)" stroke="rgba(80,100,130,0.35)" stroke-width="1" fill="none">
+                <!-- Linhas aproximadas das costuras entre pentágonos -->
+                <path d="M110,51 Q130,68 140,78"/>
+                <path d="M110,51 Q90,68 80,83"/>
+                <path d="M140,78 Q155,90 163,102"/>
+                <path d="M140,78 Q143,100 138,155"/>
+                <path d="M80,83 Q57,95 57,138"/>
+                <path d="M80,83 Q80,110 82,190"/>
+                <path d="M163,102 Q175,120 162,172"/>
+                <path d="M57,138 Q48,155 82,190"/>
+                <path d="M162,172 Q145,186 110,206"/>
+                <path d="M82,190 Q95,200 110,206"/>
+              </g>
+
+              <!-- Brilho especular primário (elipse larga) -->
+              <ellipse cx="80" cy="72" rx="32" ry="20"
+                fill="white" opacity=".28"
+                transform="rotate(-32 80 72)"/>
+
+              <!-- Brilho especular secundário (ponto quente) -->
+              <ellipse cx="72" cy="60" rx="14" ry="9"
+                fill="white" opacity=".45"
+                transform="rotate(-32 72 60)"/>
+
+              <!-- Reflexo suave no fundo inferior -->
+              <ellipse cx="140" cy="160" rx="28" ry="16"
+                fill="rgba(0,180,216,0.07)"
+                transform="rotate(25 140 160)"/>
+            </svg>
             <div class="ball-glow" aria-hidden="true"></div>
           </div>
 
-          <!-- Bandeira portuguesa — imagem real (domínio público, Wikimedia Commons) -->
-          <div class="flag-wrap">
-            <img
-              src="images/bandeira-portugal.svg"
-              alt="Bandeira de Portugal"
-              class="flag-img"
-              width="120"
-              height="80"
-            />
+          <!-- Bandeira portuguesa em SVG puro -->
+          <div class="flag-wrap" aria-label="Bandeira de Portugal">
+            <svg class="flag-pt" viewBox="0 0 90 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Verde -->
+              <rect x="0" y="0" width="36" height="60" fill="#006600"/>
+              <!-- Vermelho -->
+              <rect x="36" y="0" width="54" height="60" fill="#CC0000"/>
+              <!-- Esfera armilar / círculo amarelo (simplificado) -->
+              <circle cx="36" cy="30" r="14" fill="#FFD700" stroke="#996600" stroke-width="1"/>
+              <!-- Escudo azul simplificado -->
+              <rect x="30" y="24" width="12" height="12" rx="1.5" fill="#003399"/>
+              <!-- Cinco quinas (5 pontos brancos em X) -->
+              <circle cx="33" cy="27" r="1.6" fill="white"/>
+              <circle cx="39" cy="27" r="1.6" fill="white"/>
+              <circle cx="36" cy="30" r="1.6" fill="white"/>
+              <circle cx="33" cy="33" r="1.6" fill="white"/>
+              <circle cx="39" cy="33" r="1.6" fill="white"/>
+              <!-- Borda dourada exterior no círculo -->
+              <circle cx="36" cy="30" r="14" fill="none" stroke="#AA8800" stroke-width=".6"/>
+              <!-- Hastil -->
+              <rect x="-1" y="0" width="3" height="60" fill="#7a4a00" rx="1"/>
+            </svg>
             <span class="flag-label">Força Portugal! 🇵🇹</span>
           </div>
         </div>
@@ -325,14 +416,9 @@
         </div>
       </div>
     </div>
-    <a href="#marcas" class="section-arrow" aria-label="Ir para Marcas">
-      <span class="section-arrow-circle">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-      </span>
-    </a>
   </section>
 
-  <!-- ===== FOTO DIVIDER 3 — interior, entre Eventos e Marcas ===== -->
+  <!-- ===== FOTO DIVIDER 3 — interior a full-width, entre Eventos e Marcas ===== -->
   <div class="foto-divider foto-divider--tall" aria-hidden="true">
     <div class="foto-divider-img fdiv-interior2" data-parallax-speed="0.25"></div>
     <div class="foto-divider-overlay">
@@ -356,11 +442,6 @@
         <span class="brand-pill brand-zumit">Zumit</span>
       </div>
     </div>
-    <a href="#horario" class="section-arrow" aria-label="Ir para Horário">
-      <span class="section-arrow-circle">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-      </span>
-    </a>
   </section>
 
   <!-- ===== HORÁRIO ===== -->
@@ -399,26 +480,18 @@
         </div>
       </div>
       <p class="horario-nota reveal">
-        <svg class="horario-nota-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="12" r="10"/>
-          <line x1="12" y1="8" x2="12" y2="12"/>
-          <line x1="12" y1="16" x2="12.01" y2="16"/>
-        </svg>
         Horários sujeitos a alteração em dias festivos ou eventos especiais.
       </p>
     </div>
-    <a href="#localizacao" class="section-arrow" aria-label="Ir para Localização">
-      <span class="section-arrow-circle">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-      </span>
-    </a>
   </section>
 
-  <!-- ===== LOCALIZAÇÃO ===== -->
+  <!-- ===== LOCALIZAÇÃO — embed Maps + morada + botão ===== -->
   <section class="section" id="localizacao">
     <div class="container">
       <h2 class="section-title reveal">Localização</h2>
       <div class="localizacao-wrap reveal">
+
+        <!-- Mapa embed -->
         <div class="mapa-container">
           <iframe
             title="Localização Bar do Jardim no Google Maps"
@@ -431,6 +504,8 @@
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
+
+        <!-- Morada e botão -->
         <div class="localizacao-info glass-card">
           <div class="loc-pin-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -481,6 +556,6 @@
     </div>
   </footer>
 
-  <script src="js/main4.js"></script>
+  <script src="js/main3.js"></script>
 </body>
 </html>
